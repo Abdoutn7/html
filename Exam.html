@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Identification</title>
+<script language="javascript">
+function valide()
+{
+if(document.f.T1.value.length!=8){alert("CIN invalide");return false;}
+if(document.f.T2.value.length==0){alert("Nom invalide");return false;}
+if(document.f.T3.value.length==0){alert("Prénom invalide");return false;}
+return true;
+}
+</script>
+</head>
+
+<body>
+
+<p align="center"><b><font size="6">Identification</font></b></p>
+<form name="f" onsubmit="return valide()" method="POST" action="ajout.php">
+	<center>
+	<table border="0" width="82%">
+		<tr>
+			<td>CIN <input type="text" name="T1" size="20"></td>
+			<td width="477">Nom: <input type="text" name="T2" size="20"></td>
+			<td width="301">Prénom : <input type="text" name="T3" size="20"></td>
+		</tr>
+	</table><hr width="83%" size="4" color="#000000">
+	<p><span style="letter-spacing: 13px"><font size="7">TEST</font></span></p>
+	</center>
+	<p align="left"><u><b>Exercice 1 (4 points)</b></u><br>
+	quel sont les opérateurs qui peuvent être utilisés avec les 
+	réels?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<select size="1" name="D1">
+	<option selected value="1">AND,OR,NOT</option>
+	<option value="2">+,-,*,/</option>
+	<option value="3">DIV,MOD</option>
+	</select></p>
+	<p align="left"><u><b>Exercice 2 (4 points)</b></u><br>
+	Quel est l'opérateur qui peut être utilisé dans l'expression 
+	suivante:</p>
+	<p align="left">19........3 = 1</p>
+	<p align="left"><input type="radio" value="V1" name="R1">DIV&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="R1" value="V2"> AND&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="radio" name="R1" value="V3">MOD</p>
+	<p align="left"><u><b>Exercice 3 (12 points: 4+4+4)</b></u><br>
+	Numéroter les étapes de l'algorithme suivant:</p>
+	<p align="left"><input type="text" name="T4" size="4">&nbsp;&nbsp;&nbsp; 
+	Somme&lt;-- a+ b</p>
+	<p align="left"><input type="text" name="T5" size="4">&nbsp;&nbsp;&nbsp; 
+	Lire(a,b)</p>
+	<p align="left"><input type="text" name="T6" size="4" value="4">&nbsp;&nbsp;&nbsp; 
+	Fin calcul</p>
+	<p align="left"><input type="text" name="T7" size="4">&nbsp;&nbsp;&nbsp; 
+	Ecrire (somme)</p>
+	<p align="left"><input type="text" name="T8" size="4" value="0">&nbsp;&nbsp;&nbsp; 
+	Début calcul</p>
+	<p align="center">&nbsp;</p>
+	<p align="center">&nbsp;</p>
+	<p align="center"><input type="submit" value="Envoyer" name="B1"></p>
+</form>
+
+</body>
+
+</html>
